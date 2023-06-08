@@ -67,7 +67,7 @@ header.masthead {
     
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../data/images/kyaking_sunset.jpg);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(static/data/images/kyaking_sunset.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
