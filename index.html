@@ -2,38 +2,47 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Sam Pomajevich Resume Website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sam Pomajevich | Machine Learning Engineer</title>
+        <meta name="description" content="Sam Pomajevich, Machine Learning Engineer at Applied Research Laboratories, UT Austin, specializing in computer vision, perception, and sensor fusion." />
         <meta name="author" content="Sam Pomajevich" />
-        <title>Sam Pomajevich</title>
+        <!-- Link previews (LinkedIn, Slack, iMessage, etc.)-->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Sam Pomajevich | Machine Learning Engineer" />
+        <meta property="og:description" content="Machine Learning Engineer at Applied Research Laboratories, UT Austin. Computer vision, perception, and sensor fusion." />
+        <meta property="og:url" content="https://fsp1020.github.io/Pomajevich-Website/" />
+        <meta property="og:image" content="https://fsp1020.github.io/Pomajevich-Website/static/data/images/share-card.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
         <!-- Swimmer Icon-->
         <link rel="icon" type="image/x-icon" href="static/data/images/swimmer.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" />
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="static/css/main.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -40%">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="#page-top">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav mx-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards, Activities &amp; Honors</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#awards">Awards, Activities &amp; Honors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,12 +52,12 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">Sam Pomajevich</h1>
-                        <hr class="divider my-4"/>
+                        <h1 class="text-uppercase text-white fw-bold">Sam Pomajevich</h1>
+                        <hr class="divider my-4" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5" id="job-and-school">Data Scientist at NASA's Johnson Space Center<br>The University of Texas at Austin</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn About Me</a>
+                        <p class="text-white-75 fw-light mb-5" id="job-and-school">Machine Learning Engineer at Applied Research Laboratories, UT Austin<br />Computer Vision &middot; Perception &middot; Sensor Fusion</p>
+                        <a class="btn btn-primary btn-xl" href="#about">Learn About Me</a>
                     </div>
                 </div>
             </div>
@@ -56,170 +65,216 @@
         <!-- About-->
         <section class="page-section bg-primary" id="about">
             <div class="container">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="row">
-                            <h2 class="text-white mt-0">About Me</h2>
-                        </div>
-                        <div class="row">
-                            <p class="text-white-50 mb-4">Data driven programmer and self-starter with a passion for transforming data and discovering meaningful insights. M.S. in Data Science student with a B.S. in Computational Physics from The University of Texas at Austin. Currently a data scientist at NASA’s Johnson Space Center leveraging data and automation to improve processes for lunar exploration, ISS inspections, and more. Past engineer supporting NASA’s Mission Control at the Johnson Space Center. Strong background in Python, mathematics, and data analysis gained from the culmination of professional positions, coursework, and personal projects.</p>
-                        </div>
-                        <div class="row">
-                            <div class="col my-2">
-                                <a class="btn btn-light btn-xl js-scroll-trigger w-100" href="static/data/pdf/Samuel Pomajevich Resume.pdf">See My Resume</a>
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-8 order-2 order-lg-1">
+                        <h2 class="text-white mt-0 mb-4">About Me</h2>
+                        <p class="text-white-75 mb-4">Machine Learning Engineer at Applied Research Laboratories, The University of Texas at Austin, specializing in computer vision, perception, and sensor fusion. I take ML systems from research to production. Previously, I built computer vision systems at NASA's Johnson Space Center and supported the International Space Station from Mission Control. M.S. in Data Science and B.S. in Computational Physics from UT Austin, and a former NCAA national champion and Pan American Games medalist swimmer. Active DoD clearance.</p>
+                        <div class="row g-3">
+                            <div class="col-sm">
+                                <a class="btn btn-light btn-xl w-100" href="https://www.linkedin.com/in/sam-pomajevich/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in me-2"></i>See My LinkedIn</a>
                             </div>
-                            <div class="col my-2">
-                                <a class="btn btn-light btn-xl js-scroll-trigger w-100" href="https://www.linkedin.com/in/sam-pomajevich/">See My LinkedIn</a>
+                            <div class="col-sm">
+                                <a class="btn btn-light btn-xl w-100" href="https://github.com/FSP1020" target="_blank" rel="noopener"><i class="fa-brands fa-github me-2"></i>See My GitHub</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <img src="static/data/images/me.png" class="img-fluid float-right" alt="Sam Pomajevich Image" id="profile-pic">
+                    <div class="col-lg-4 order-1 order-lg-2 text-center">
+                        <img src="static/data/images/me.png" class="img-fluid rounded" alt="Sam Pomajevich" id="profile-pic" />
                     </div>
                 </div>
             </div>
         </section>
         <!-- Education-->
         <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">The University of Texas at Austin</h3>
-                            <div class="subheading mb-3">Masters of Science</div>
-                            <div>Data Science</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Graduating Spring 2024</span></div>
+            <div class="container">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">The University of Texas at Austin</h3>
+                        <div class="subheading mb-2">Master of Science</div>
+                        <div>Data Science</div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">The University of Texas at Austin</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computational Physics</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Graduating May 2021</span></div>
+                    <div class="flex-shrink-0 ms-md-4"><span class="text-primary">December 2024</span></div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">The University of Texas at Austin</h3>
+                        <div class="subheading mb-2">Bachelor of Science</div>
+                        <div>Computational Physics</div>
                     </div>
+                    <div class="flex-shrink-0 ms-md-4"><span class="text-primary">May 2021</span></div>
+                </div>
             </div>
-            </section>
+        </section>
         <!-- Experience-->
         <section class="resume-section" id="experience">
-          <div class="resume-section-content">
-            <h2 class="mb-5">Experience</h2>
+            <div class="container">
+                <h2 class="mb-5">Experience</h2>
 
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                  <h3 class="mb-0">Data Scientist - NASA’s Johnson Space Center</h3>
-                  <div class="subheading mb-3">Jacobs Engineering and Technology Contract (JETS), HX5</div>
-                    <p>Provide machine learning and programming expertise to NASA's Johnson Space Center (JSC).</p>
-                    <p>Apply advanced computer vision and deep learning techniques to analyze and extract meaningful 
-                        insights from diverse data sources, including imagery, video, geospatial information, and human activities, 
-                        supporting both International Space Station (ISS) operations and planetary exploration missions.</p>
-                    <p>Develop and implement data science solutions tailored to Earth, Moon, and spacecraft-based imagery and video, 
-                        utilizing cutting-edge machine learning algorithms for image segmentation, object detection, and image processing tasks.</p>
-                    <p>Collaborate with a team to develop and submit research proposals for securing new funding opportunities in the field of machine learning, 
-                        computer vision, and data science, aiming to advance space exploration technologies.</p>
-                    <p>Engage in dynamic and time-critical environments, collaborating closely with scientists, engineers, and managers to ensure 
-                        effective communication and seamless integration of automation and machine learning methodologies in space exploration initiatives.</p>
+                <!-- ARL:UT-->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Machine Learning Engineer - Applied Research Laboratories, UT Austin</h3>
+                        <div class="subheading">Advanced Technology Laboratory (ATL)</div>
+                    </div>
+                    <div class="flex-shrink-0 ms-md-4"><span class="text-primary">September 2023 - Present</span></div>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">September 2022 - Present</span></div>
-              </div>
 
-              <!-- Vehicle Subsystem Engineer-->
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                  <h3 class="mb-0">Vehicle Subsystem and Operations Engineer - NASA, International Space Station</h3>
-                  <div class="subheading mb-3">NASA Safety and Mission Assurance Contract, Oakwood University</div>
-                    <p>Leveraged data-driven analysis and problem-solving techniques to ensure the safety of 7+ astronauts 
-                        aboard the International Space Station (ISS) as a Safety Console Operator in Mission Control at the 
-                        Johnson Space Center.</p>
-                    <p>Employed data analysis and problem solving to identify potential threats and develop strategies for 
-                        mitigating risks to the ISS technical systems.</p>
-                    <p>Collaborated with cross-functional teams to analyze and interpret complex technical data, providing 
-                        real-time solutions and relaying Safety and Mission Assurance directives to NASA senior management, 
-                        technical/non-technical teams, and international partners (Japan, Canada, Russia, and the European 
-                        Space Agency).</p>
-                    <p>Contributed to a fast-paced environment by utilizing data-centric approaches to problem-solving, 
-                        ensuring the optimal performance of technical systems in critical situations.</p>
+                <!-- NASA JSC-->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Machine Learning Engineer - NASA’s Johnson Space Center</h3>
+                        <div class="subheading mb-3">JSC Engineering, Technology, and Science (JETS), HX5</div>
+                        <ul>
+                            <li>Applied computer vision and deep learning (segmentation, object detection, image processing) to imagery, video, text, and geospatial data supporting International Space Station (ISS) operations and Artemis missions.</li>
+                            <li>Performed data mining and cleaning, and built pipelines for training ML models on custom data.</li>
+                            <li>Optimized for performance on CUDA-enabled GPUs, ensuring more efficient model training and inference.</li>
+                            <li>Collaborated with commercial partners and cross-functional teams, including Google, Microsoft, data scientists, flight controllers, and engineers, to integrate automation and advance space exploration technologies.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0 ms-md-4"><span class="text-primary">September 2022 - September 2023</span></div>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">July 2020 - September 2021</span></div>
-              </div>
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                  <h3 class="mb-0">Undergraduate Research Assistant</h3>
-                  <div class="subheading mb-3">Nanoscale Design and Manufacturing Laboratory – The University of Texas at Austin</div>
-                    <p>Developed a predictive algorithm using Python and MATLAB to analyze image coordinates and generate an Optical 
-                        Proximity Correction (OPC) method, resulting in reduced thermal heat zones during nano-scale manufacturing 
-                        processes.</p>
-                    <p>Presented the predictive algorithm to optimize image integrity in semiconductor manufacturing resulting in a 
-                        more efficient, accurate process.</p>
-                    <p>Collaborated with a multidisciplinary team of researchers, engineers, and scientists to ensure the successful 
-                        implementation of the algorithm.</p>
+
+                <!-- Vehicle Subsystem Engineer-->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Vehicle Subsystem and Operations Engineer - NASA, International Space Station</h3>
+                        <div class="subheading mb-3">NASA Safety and Mission Assurance Contract, Oakwood University</div>
+                        <ul>
+                            <li>Leveraged data-driven analysis and problem-solving techniques to ensure the safety of 7+ astronauts aboard the International Space Station (ISS) as a Safety Console Operator in Mission Control at the Johnson Space Center.</li>
+                            <li>Employed data analysis and problem solving to identify potential threats and develop strategies for mitigating risks to the ISS technical systems.</li>
+                            <li>Collaborated with cross-functional teams to analyze and interpret complex technical data, providing real-time solutions and relaying Safety and Mission Assurance directives to NASA senior management, technical/non-technical teams, and international partners (Japan, Canada, Russia, and the European Space Agency).</li>
+                            <li>Contributed to a fast-paced environment by utilizing data-centric approaches to problem-solving, ensuring the optimal performance of technical systems in critical situations.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0 ms-md-4"><span class="text-primary">July 2021 - September 2022</span></div>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">May 2020 - September 2020</span></div>
-              </div>
-          </div>
+
+                <!-- Undergraduate Research-->
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Undergraduate Research Assistant</h3>
+                        <div class="subheading mb-3">Nanoscale Design and Manufacturing Laboratory – The University of Texas at Austin</div>
+                        <ul>
+                            <li>Developed a predictive algorithm using Python and MATLAB to analyze image coordinates and generate an Optical Proximity Correction (OPC) method, resulting in reduced thermal heat zones during nano-scale manufacturing processes.</li>
+                            <li>Presented the predictive algorithm to optimize image integrity in semiconductor manufacturing, resulting in a more efficient, accurate process.</li>
+                            <li>Collaborated with a multidisciplinary team of researchers, engineers, and scientists to ensure the successful implementation of the algorithm.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0 ms-md-4"><span class="text-primary">May 2020 - September 2020</span></div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="resume-section" id="projects">
+            <div class="container">
+                <h2 class="mb-5">Projects</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="project-card h-100">
+                            <h3 class="mb-1">NASA Object Detection System</h3>
+                            <div class="subheading mb-3">Lead Developer &middot; NASA’s Johnson Space Center</div>
+                            <ul>
+                                <li>Leveraged Python, PyTorch, Flask, and JavaScript to enable object detection, text detection/recognition, and image processing for all live video streams transmitted from the ISS.</li>
+                                <li>Demonstrated system capabilities to stakeholders, securing over $100k in funding and driving adoption of ML/AI in space operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card h-100">
+                            <h3 class="mb-1">Orbital Debris Impact Detection</h3>
+                            <div class="subheading mb-3">Sole Developer &middot; NASA’s Johnson Space Center</div>
+                            <ul>
+                                <li>Pioneered a novel solution utilizing machine learning to detect and assess damage to the ISS and NASA spacecraft resulting from orbital debris strikes, addressing one of the most critical risks to human spaceflight.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Skills -->
         <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Python (Numpy, OpenCV, Pandas, Scikit-learn</li>
-                        <li>SQL</li>
-                        <li>R</li>
-                        <li>Pytorch</li>
-                        <li>Tensorflow and Keras</li>
-                        <li>JavaScript</li>
-                        <li>Git</li>
-                        <li>Flask</li>
-                        <li>Linux</li>
-                        <li>Cloud Computing(Azure/GCP)</li>
-                        <li>HTML/CSS</li>
-                        <li>MATLAB</li>
-                        <li>Physics</li>
-                        <li>Mathematics</li>
-                        <li>PHP</li>
-                        <li>APIs</li>
-                        <li>Data Analysis</li>
-                    </ul>
+            <div class="container">
+                <h2 class="mb-5">Skills</h2>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="skill-heading">Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                            <li>R</li>
+                            <li>JavaScript</li>
+                            <li>MATLAB</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="skill-heading">ML &amp; Computer Vision</h3>
+                        <ul class="skill-list">
+                            <li>PyTorch</li>
+                            <li>CUDA</li>
+                            <li>TensorFlow / Keras</li>
+                            <li>OpenCV</li>
+                            <li>NumPy</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="skill-heading">Engineering</h3>
+                        <ul class="skill-list">
+                            <li>FastAPI</li>
+                            <li>Flask</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                            <li>Cloud (Azure / GCP / AWS)</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="skill-heading">Areas</h3>
+                        <ul class="skill-list">
+                            <li>Machine Learning</li>
+                            <li>Computer Vision</li>
+                            <li>SLAM</li>
+                            <li>Sensor Fusion</li>
+                            <li>Autonomous Systems</li>
+                            <li>Agentic Programming</li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!-- Interests -->
         <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Autonomous &amp; Electric Vehicles</li>
-                        <li>Programming</li>
-                        <li>Being Outdoors!</li>
-                        <li>Boats &amp; Marine Vehicles</li>
-                        <li>Aerospace/Aeronautics</li>
-                        <li>Research, Innovation and Development</li>
-                        <li>Manufacturing and Design</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="container">
+                <h2 class="mb-5">Interests</h2>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Autonomous &amp; Electric Vehicles</li>
+                    <li>Programming</li>
+                    <li>Being Outdoors!</li>
+                    <li>Boats &amp; Marine Vehicles</li>
+                    <li>Aerospace/Aeronautics</li>
+                    <li>Research, Innovation and Development</li>
+                    <li>Manufacturing and Design</li>
+                </ul>
+            </div>
+        </section>
         <!-- Awards -->
         <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards, Activities &amp; Honors</h2>
-                    <ul>
-                        <li>Silver Medalist - 2019 Pan American Games: 200m Butterfly, 800m Free Relay</li>
-                        <li>Texas Men’s Swim and Dive Team – August 2017 to 2021</li>
-                        <li>NCAA D1 National Champion - 2018, 2021</li>
-                        <li>6-Time All American</li>
-<!--                         <li>Provost Award - 2018 & 2019</li>
-                        <li>University Honors - Spring 2018, Fall 2018 & Spring 2019</li>
-                        <li>Big 12 Commissioner’s Honor Roll - Fall 2018, Spring 2018</li> -->
-                        <li>College Swimming & Diving Coaches Association of America (CSCAA) Scholar All-American - Spring 2018, 2021</li>
-                        <li>Academic All-Big 12 Rookie Team - Spring 2018</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="container">
+                <h2 class="mb-5">Awards, Activities &amp; Honors</h2>
+                <ul>
+                    <li>Silver Medalist - 2019 Pan American Games: 200m Butterfly, 800m Free Relay</li>
+                    <li>NCAA D1 National Champion - 2018, 2021</li>
+                    <li>6-Time All American</li>
+                    <li>Texas Men’s Swim and Dive Team - August 2017 to 2021</li>
+                    <li>College Swimming &amp; Diving Coaches Association of America (CSCAA) Scholar All-American - Spring 2018, 2021</li>
+                    <li>Academic All-Big 12 Rookie Team - Spring 2018</li>
+                    <li>United States Coast Guard Auxiliary Member - Summer 2021 to November 2022</li>
+                </ul>
+            </div>
+        </section>
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -227,38 +282,31 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0">Contact Me</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Please give me a call or send me an email.</p>
+                        <p class="text-muted mb-5">The best way to reach me is by email or LinkedIn.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col text-center mb-5 mb-lg-0">
-                        <i class="fas fa-mobile fa-3x mb-3 text-muted"></i>
-                        <div>+1 (571) 288-4292</div>
-                    </div>
-                    <div class="col text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <!-- Send email-->
+                <div class="row g-4 g-lg-5 justify-content-center">
+                    <div class="col-sm-4 text-center">
+                        <i class="fa-solid fa-envelope fa-3x mb-3 text-muted"></i>
                         <a class="d-block" href="mailto:pomajevichsam@gmail.com">pomajevichsam@gmail.com</a>
                     </div>
-                    <div class="col text-center">
-                        <i class="fab fa-linkedin-in fa-3x mb-3 text-muted"></i>
-                        <!-- See LinkedIn-->
-                        <a class="d-block" href="https://www.linkedin.com/in/sam-pomajevich/">LinkedIn</a>
+                    <div class="col-sm-4 text-center">
+                        <i class="fa-brands fa-linkedin-in fa-3x mb-3 text-muted"></i>
+                        <a class="d-block" href="https://www.linkedin.com/in/sam-pomajevich/" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <i class="fa-brands fa-github fa-3x mb-3 text-muted"></i>
+                        <a class="d-block" href="https://github.com/FSP1020" target="_blank" rel="noopener">GitHub</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Copyright © 2023 - Sam Pomajevich</div></div>
+            <div class="container"><div class="small text-center text-muted">Copyright © <span id="copyright-year">2026</span> - Sam Pomajevich</div></div>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <!-- Core theme JS-->
+        <!-- Bootstrap JS (includes Popper)-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="static/js/main.js"></script>
     </body>
 </html>

@@ -1,125 +1,146 @@
-body {
-    margin: 0;
-    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+:root {
+    --brand: #cc6600;
+    --brand-dark: #a35200;
+    --heading-font: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    margin-bottom: 0.5rem;
-    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px; /* keep section titles clear of the fixed navbar */
+}
+
+body {
+    font-family: "Merriweather", Georgia, serif;
+    color: #212529;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
     font-weight: 500;
     line-height: 1.2;
 }
 
+h3 {
+    font-size: 1.35rem;
+}
+
+a {
+    color: var(--brand);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand-dark);
+}
+
 .text-primary {
-    color: #cc6600 !important;
+    color: var(--brand) !important;
 }
 
 .bg-primary {
-    background-color: #cc6600 !important;
-}
-
-.text-white {
-    color: white;
+    background-color: var(--brand) !important;
 }
 
 .text-white-75 {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.85);
 }
 
-#mainNav.navbar-scrolled {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
-}
-
-#mainNav.navbar-scrolled .navbar-brand{
-    color: black;
-}
-
-#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link{
-    color: black;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #cc6600 !important;
+/* ---------- Navbar ---------- */
+#mainNav {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
-    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--heading-font);
     font-weight: 700;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+#mainNav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--heading-font);
+    font-size: 0.9rem;
 }
 
+#mainNav .nav-link:hover {
+    color: #fff;
+}
+
+#mainNav .nav-link.active {
+    color: var(--brand) !important;
+}
+
+#mainNav.navbar-scrolled {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#mainNav.navbar-scrolled .navbar-brand,
+#mainNav.navbar-scrolled .nav-link {
+    color: #212529;
+}
+
+#mainNav.navbar-scrolled .nav-link:hover {
+    color: var(--brand);
+}
+
+/* Phones/tablets: always-solid navbar so the open menu is readable */
+@media (max-width: 991.98px) {
+    #mainNav {
+        background-color: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    #mainNav .navbar-brand,
+    #mainNav .nav-link {
+        color: #212529;
+    }
+}
+
+/* ---------- Masthead ---------- */
 header.masthead {
     height: 100vh;
     min-height: 40rem;
-    
     padding-top: 10rem;
-    padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../data/images/kyaking_sunset.JPG);
+    padding-bottom: 5.5rem;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../data/images/kayaking-sunset.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
     background-size: cover;
 }
 
 header.masthead h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
 }
 
-#job-and-school{
-    font-size: 1.15rem;
+#job-and-school {
+    font-size: 1.1rem;
 }
 
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
+@media (min-width: 768px) {
+    header.masthead h1 {
+        font-size: 3rem;
+    }
 
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
-
-hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
+    #job-and-school {
+        font-size: 1.2rem;
+    }
 }
 
 hr.divider {
     max-width: 3.25rem;
-    border-width: 0.2rem;
-    border-color: #cc6600;
-    border-color: #cc6600 !important;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: 0.2rem solid var(--brand);
+    opacity: 1;
 }
 
-#profile-pic{
-    min-width: 300px;
-}
-
+/* ---------- Buttons ---------- */
 .btn-xl {
-    padding: 1.25rem 2.25rem;
+    padding: 1.1rem 2rem;
+    font-family: var(--heading-font);
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -129,46 +150,55 @@ hr.divider {
 
 .btn-primary {
     color: #fff;
-    background-color: #cc6600;
-    border-color: #cc6600;
+    background-color: var(--brand);
+    border-color: var(--brand);
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+}
+
+.btn-light {
+    color: #212529;
+}
+
+/* ---------- Sections ---------- */
 .page-section {
-    padding: 8rem 0;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 5rem 0;
 }
 
 section.resume-section {
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    max-width: 100rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.flex-grow-1 {
-    flex-grow: 1 !important;
+#profile-pic {
+    max-width: 300px;
+    width: 100%;
 }
 
-.flex-shrink-0 {
-    flex-shrink: 0 !important;
+.subheading {
+    font-family: var(--heading-font);
+    color: #6c757d;
 }
 
-a {
-    color: #cc6600;
-    text-decoration: none;
-    background-color: transparent;
+.project-card {
+    padding: 1.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--brand);
+    border-radius: 0.5rem;
 }
 
-.page-section {
-    padding: 2rem 0;
+.skill-heading {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--brand);
+    margin-bottom: 0.75rem;
+}
+
+.skill-list {
+    padding-left: 1.1rem;
+    margin-bottom: 0;
 }
